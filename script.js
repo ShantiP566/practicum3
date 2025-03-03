@@ -39,7 +39,7 @@ document.getElementById('primeForm').addEventListener('submit', async (e) => {
     const number = document.getElementById('numberInput').value;
 
     try {
-        const response = await fetch(`${API_URL}/prime/${number}`, {
+        const response = await fetch(`${API_URL}/primes/${number}`, {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
